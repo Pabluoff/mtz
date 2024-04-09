@@ -124,8 +124,8 @@ nav {
 }
 
 .logo__main {
-    font-family: 'Mystique', sans-serif;
-    font-weight: lighter;
+    font-family:'Mystique', 'poppins', sans-serif, cursive;
+    font-weight: 400;
     font-size: 2.7rem;
 }
 
