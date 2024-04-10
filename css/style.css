@@ -144,7 +144,7 @@ nav {
     text-decoration: none;
     color: #ffffff;
     margin: 0 0.7vw;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .nav-links li a:hover {
@@ -817,6 +817,7 @@ nav {
     margin-bottom: -25px;
 
 }
+
 
 .card__icons {
     display: flex;
