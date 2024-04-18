@@ -934,45 +934,6 @@ nav {
     }
 }
 
-.testimonials .line-01 {
-    top: 35rem;
-    height: calc(100% - 35rem);
-}
-
-@media (max-width: 1980px) {
-
-    .testimonials .line-01 {
-        top: 20rem;
-        height: calc(100% - 20rem);
-    }
-}
-
-@media (max-width: 1399.98px) {
-
-    .testimonials .line-01 {
-        top: 0;
-        height: 100%;
-    }
-}
-
-
-@media (max-width: 991.98px) {
-    .testimonials {
-        margin-top: 0;
-    }
-}
-
-
-.testimonials .container {
-    position: relative;
-    padding: 21rem 0 10rem;
-}
-
-@media (max-width: 991.98px) {
-    .testimonials .container {
-        padding: 2rem 0 9.8rem;
-    }
-}
 
 .testimonials__header {
     display: flex;
@@ -1037,28 +998,12 @@ nav {
     position: absolute;
     top: 2.5rem;
     left: 2.6rem;
-    max-width: 9.3rem;
+    max-width: 9.0rem;
     width: 100%;
-    display: none;
 }
 
 @media (max-width: 991.98px) {
     .testimonials__header .title-section {
-        position: relative;
-        left: 0;
-        top: 0;
-    }
-}
-
-.testimonials__header .button {
-    position: absolute;
-    top: 8.5rem;
-    right: 5.7rem;
-    max-width: 19.5rem;
-}
-
-@media (max-width: 991.98px) {
-    .testimonials__header .button {
         display: none;
     }
 }
@@ -1082,24 +1027,89 @@ nav {
     }
 }
 
-.carrossel-container {
-    margin-top: 7rem;
-
-}
-
-@media (max-width: 991.98px) {
-    .carrossel-container {
-        margin-top: 4rem;
-        padding-left: 45px;
-        padding-right: 33px;
+@media (max-width: 1980px) {
+    .testimonials {
+        margin-top: -25rem;
     }
 }
 
-.carrossel-container::before {
+.testimonials .line-01 {
+    top: 35rem;
+    height: calc(100% - 35rem);
+}
+
+@media (max-width: 1980px) {
+
+    .testimonials .line-01 {
+        top: 20rem;
+        height: calc(100% - 20rem);
+    }
+}
+
+@media (max-width: 1399.98px) {
+
+    .testimonials .line-01 {
+        top: 0;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .testimonials {
+        margin-top: 0;
+    }
+}
+
+
+.testimonials .container {
+    position: relative;
+    padding: 21rem 0 10rem;
+}
+
+@media (max-width: 991.98px) {
+    .testimonials .container {
+        padding: 2rem 0 5.8rem;
+    }
+}
+
+.decorative-image {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 9px;
+    margin-bottom: -99px;
+}
+
+
+@media (max-width: 991.98px) {
+    .decorative-image {
+        margin-bottom: 0;
+    }
+}
+
+
+.swiper-container {
+    width: 70%;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 9rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.swiper-container::before {
     content: '';
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 5%;
     width: 250px;
     height: 150px;
     background-image: url('/img/gradient.png');
@@ -1107,7 +1117,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     animation: rotateAnimation 5s linear infinite;
-    z-index: 0;
+    z-index: 1;
     filter: blur(50px);
 }
 
@@ -1122,7 +1132,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .carrossel-container::before {
+    .swiper-container::before {
         display: flex;
         left: 120%;
         width: 100px;
@@ -1130,28 +1140,21 @@ nav {
     }
 }
 
-.slider {
-    width: 100%;
-    max-width: 100vh;
-    height: 700px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+@media (max-width: 991.98px) {
+    .swiper-container {
+        padding-left: 38px;
+        padding-right: 25px;
+        margin-top: 4rem;
+    }
 }
 
-.slider .list {
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-
-
+@media (max-width: 991.98px) {
+    .swiper-container {
+        width: 90%;
+    }
 }
 
-.slider .list img {
+.swiper-slide img {
     width: auto;
     max-width: 100%;
     height: auto;
@@ -1168,59 +1171,80 @@ nav {
     object-fit: cover;
 }
 
-.slider .buttons {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: none;
-    justify-content: space-between;
+.swiper-slide img:hover {
+    transform: scale(1.05);
 }
 
-.slider .buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #00ffaa;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 23px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.slider .dots {
+.swiper-pagination {
     position: absolute;
-    bottom: 10px;
+    top: 10px;
     left: 0;
-    color: #00eaaf;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    right: 0;
+    text-align: center;
+    z-index: 1;
 }
 
-.slider .dots li {
-    list-style: none;
+.swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background-color: #bebebe91;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
+    background-color: rgb(0, 255, 153);
+    border: #c4c4c4 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.slider .dots li.active {
-    width: 30px;
-    background-color: #00eaaf;
+.swiper-pagination-bullet-active {
+    background-color: #00ffbb;
 }
 
-@media screen and (max-width: 768px) {
-    .slider {
-        height: 340px;
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.463);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.custom-swiper-button-next {
+    right: -14px;
+    top: 45%;
+}
+
+.custom-swiper-button-prev {
+    left: 1px;
+}
+
+@media (max-width: 991.98px) {
+    .custom-swiper-button-prev {
+        left: 17px;
+        top: 48%;
+    }
+
+    .custom-swiper-button-next {
+        right: 10px;
+        top: 49%;
     }
 }
 
+.custom-swiper-button-next i,
+.custom-swiper-button-prev i {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.swiper-slide img.swiper-slide-hidden {
+    visibility: hidden;
+}
