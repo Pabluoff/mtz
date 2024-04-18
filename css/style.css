@@ -1089,7 +1089,7 @@ nav {
 
 @media (max-width: 991.98px) {
     .carrossel-container {
-        margin-top: 2rem;
+        margin-top: 4rem;
         padding-left: 45px;
         padding-right: 33px;
     }
@@ -1220,14 +1220,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     .slider {
-        height: 300px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .slider {
-        max-width: 35%;
-        height: 500px;
+        height: 340px;
     }
 }
 
