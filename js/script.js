@@ -210,3 +210,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+//modal
+
+var modal = document.getElementById("modal");
+
+var modalBtnPremium = document.getElementById("modalBtnPremium");
+var modalBtnUltra = document.getElementById("modalBtnUltra");
+
+var span = document.getElementsByClassName("close")[0];
+
+function openModal() {
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+//link preço premium
+modalBtnPremium.addEventListener("click", function () {
+    openModal();
+    document.getElementById("btnApple").href = "link_para_oferta_premium_apple";
+    document.getElementById("btnAndroid").href = "link_para_oferta_premium_android";
+});
+
+//link preço ultra
+modalBtnUltra.addEventListener("click", function () {
+    openModal();
+    document.getElementById("btnApple").href = "link_para_oferta_ultra_apple";
+    document.getElementById("btnAndroid").href = "link_para_oferta_ultra_android";
+});
+
+span.onclick = function () {
+    closeModal();
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+}
