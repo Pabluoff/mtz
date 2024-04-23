@@ -137,7 +137,6 @@ nav {
     padding: 0 0.7vw;
     justify-content: space-evenly;
     align-items: center;
-    text-transform: uppercase;
 }
 
 .nav-links li a {
@@ -1247,4 +1246,412 @@ nav {
 
 .swiper-slide img.swiper-slide-hidden {
     visibility: hidden;
+}
+
+/* Price */
+.price-section {
+    padding: 10px 0;
+    position: relative;
+}
+
+.price-section::before {
+    content: "";
+    background-image: url('/img/granada.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -580px;
+    left: -640px;
+    width: 100%;
+    height: 100vi;
+    transform: scale(0.2);
+    z-index: 1;
+}
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.offer {
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 370px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.offer-description {
+    color: #c7c6c6;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: start;
+    line-height: 3.4rem;
+    font-size: 16px;
+}
+
+.offer-title {
+    position: relative;
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #161616;
+    margin-top: -8px;
+    text-transform: uppercase;
+}
+
+
+.offer-description .fa-check {
+    color: #00b894;
+    text-shadow: 0 0 10px #00b894, 0 0 20px #00b894;
+}
+
+
+.offer-description.ultra {
+    color: #fff;
+}
+
+.offer-description .fa-times {
+    color: #d63031;
+    text-shadow: 0 0 10px #d63031, 0 0 20px #d63031;
+}
+
+.offer-price {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: #2ecc71;
+    color: #ffffff;
+}
+
+.new-price {
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: -05px;
+}
+
+.offer-label {
+    font-size: 14px;
+    color: #fff;
+    font-weight: lighter;
+
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #363636;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2e2e2e;
+}
+
+.btn-primary a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .offer {
+        width: calc(100% - 40px);
+        margin: 0 auto 20px;
+    }
+
+    .offer-description {
+        line-height: 3rem;
+        font-size: 14px;
+        white-space: nowrap;
+
+    }
+
+    .price-section::before {
+        left: -170px;
+        top: -160px;
+        transform: scale(0.3);
+    }
+
+}
+
+.ribbon {
+    position: absolute;
+    display: flex;
+    top: 43px;
+    right: -30px;
+    background-color: #0ee18d;
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: rotate(40deg) translateY(-22px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #008c6c;
+    border-right: 2px solid #008c6c;
+}
+
+/*Beneficio*/
+.benefits-section {
+    padding: 10px 0;
+    margin-bottom: 60px;
+    margin-top: -3px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 140px;
+}
+
+.benefit {
+    width: calc(33.33% - 20px);
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.benefit-description {
+    color: #c7c6c6;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+        margin-top: -55px;
+        margin: 0 0;
+        padding: 10px 0px;
+
+    }
+
+    .benefit {
+        width: calc(100% - 78px);
+        margin: 20px 39px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    color: #fff;
+}
+
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Margens horizontais padrão */
+}
+
+.founder-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-image {
+    flex: 0 0 50%;
+    margin-right: 30px;
+}
+
+.founder-image img {
+    width: 100%;
+    border-radius: 15px;
+    border: solid 2px #9c9c9c;
+    cursor: pointer;
+}
+
+.founder-info {
+    flex: 0 0 50%;
+}
+
+.founder-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.founder-name .fa-check-circle {
+    font-size: 1.6rem;
+    margin-right: 5px;
+}
+
+.founder-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #c7c7c7;
+    margin-top: 10px;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .container-about {
+        padding: 0 40px;
+    }
+
+    .about-section {
+        padding: 30px 0;
+    }
+
+    .founder-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .founder-image {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .founder-info {
+        flex: 0 0 100%;
+    }
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 769px) {
+    .container-about {
+        padding: 0 120px;
+    }
+}
+
+/* FAQ */
+.faq-section {
+    padding: 30px 0;
+    color: #fff;
+    margin: 0 190px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.faq-item {
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #121212;
+}
+
+.faq-question {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: #dad8d8;
+}
+
+.faq-answer {
+    font-size: 1.7rem;
+    line-height: 1.9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #ffffff;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+}
+
+.faq-question i {
+    margin-right: 10px;
+    color: #00ffbb;
+}
+
+@media screen and (max-width: 768px) {
+    .faq-section {
+        padding: 30px 0;
+        margin: 0 20px;
+    }
+}
+
+/*Footer*/
+.footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media .social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    color: #00ffbb;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer p {
+        margin: 0 60px;
+        font-size: 14px;
+    }
 }
