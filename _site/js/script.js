@@ -232,14 +232,14 @@ function closeModal() {
 modalBtnPremium.addEventListener("click", function () {
     openModal();
     document.getElementById("btnApple").href = "https://checkout.pepper.com.br/?p=136989&o=174901";
-    document.getElementById("btnAndroid").href = "link_para_oferta_premium_android";
+    document.getElementById("btnAndroid").href = "https://checkout.pepper.com.br/?p=136989&o=174903";
 });
 
 //link preço ultra
 modalBtnUltra.addEventListener("click", function () {
     openModal();
     document.getElementById("btnApple").href = "https://checkout.pepper.com.br/?p=136989&o=174902";
-    document.getElementById("btnAndroid").href = "link_para_oferta_ultra_android";
+    document.getElementById("btnAndroid").href = "https://checkout.pepper.com.br/?p=136989&o=174904";
 });
 
 span.onclick = function () {
